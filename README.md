@@ -1,46 +1,62 @@
-🌧️ Precipitation Prediction using Machine Learning
-This project uses machine learning to predict daily precipitation in Los Angeles based on historical weather data. Built entirely in a single Jupyter Notebook, it walks through the full ML workflow — from data preprocessing to model evaluation.
+# 🌧️ Precipitation Prediction using Machine Learning
 
-📌 Overview
-Goal: Predict rainfall based on weather attributes (e.g., temperature, humidity).
+This project applies **supervised machine learning** to predict daily precipitation in Los Angeles using historical weather data. The entire workflow is implemented in a single Jupyter Notebook.
 
-Dataset: 1,000+ historical records for Los Angeles.
+## 📌 Overview
 
-Accuracy: Achieved 93% accuracy using classification models.
+- **Objective:** Predict whether it will rain based on weather features like temperature, humidity, and wind speed.
+- **Dataset:** 1000+ historical weather records for Los Angeles.
+- **Libraries:** `pandas`, `numpy`, `matplotlib`, `seaborn`, `scikit-learn`
+- **Accuracy:** Achieved up to **93%** using classification models.
 
-🛠️ Tools & Libraries
-Python
+## 🧪 Machine Learning Pipeline
 
-Pandas, NumPy
+The notebook performs:
 
-Matplotlib, Seaborn
+1. **Exploratory Data Analysis (EDA)**  
+   Identify correlations, missing values, and distribution of features.
 
-Scikit-learn
+2. **Data Preprocessing**  
+   - Feature selection  
+   - Handling nulls and encoding categorical variables  
+   - Train-test split  
 
-📘 What’s Inside
-The notebook includes:
+3. **Model Training**  
+   Algorithms used:
+   - Logistic Regression  
+   - Random Forest  
+   - Decision Tree  
 
-Exploratory Data Analysis (EDA)
+4. **Evaluation Metrics**  
+   - Accuracy  
+   - Confusion Matrix  
+   - Cross-validation  
 
-Data preprocessing and feature selection
+## 📁 File Structure
 
-Training multiple classification models
+```bash
+📦 Precipitation-Prediction
+ └── precipitation_prediction.ipynb   # Main notebook
 
-Model evaluation using accuracy and confusion matrix
 
-🔍 Key Highlights
-Used supervised learning techniques (Logistic Regression, Random Forest)
+---
 
-Visualized correlations and feature importance
+## 📊 Results
 
-Achieved strong predictive performance with minimal overfitting
+- **Best Performing Model:** ✅ Random Forest Classifier
+- **Test Accuracy:** ~93%  
+- **Key Insights:**
+  - Temperature and humidity are strong indicators of rainfall.
+  - Model generalizes well across unseen data.
+  - Decision boundaries were validated using confusion matrices and cross-validation scores.
 
-📁 File
-precipitation_prediction.ipynb — Main notebook containing all code, analysis, and results
+---
 
-💡 Future Scope
-Extend to multi-city or time-series data
+## 💡 Future Enhancements
 
-Deploy model via a web interface (Streamlit/Flask)
+- Extend to **multi-city** or **regional-scale** weather prediction  
+- Experiment with **time-series forecasting models** like LSTM, Prophet, or ARIMA  
+- Build a **real-time rainfall prediction web app** using Flask or Streamlit  
+- Incorporate additional meteorological parameters (e.g., pressure, wind gust, cloud cover)
 
-Automate retraining on new data
+---
