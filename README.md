@@ -32,12 +32,6 @@ The notebook performs:
    - Confusion Matrix  
    - Cross-validation  
 
-## 📁 File Structure
-
-```bash
-📦 Precipitation-Prediction
- └── precipitation_prediction.ipynb   # Main notebook
-
 
 ---
 
